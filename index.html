@@ -41,7 +41,8 @@ title: Home
 
     <div class="row listrecent">
 
-        {% for post in paginator.posts %}
+        {% assign allposts = paginator.posts | reverse %}
+        {% for post in allposts %}
 
         {% include postbox.html %}
 
