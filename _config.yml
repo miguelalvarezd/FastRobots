@@ -4,7 +4,7 @@ title: "Fast Robots"
 description: "My GitHub page where I will upload all the lab reports."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: /FastRobots
+baseurl: /FastRobots #remember to change author's web if this changes
 google_analytics: 'UA-46278016-1'
 disqus: 'demowebsite'
 #mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
@@ -18,7 +18,7 @@ authors:
     display_name: Miguel
     gravatar: e56154546cf4be74e393c62d1ae9f9d4
     email: wowthemesnet@gmail.com
-    web: "/about"
+    web: '/FastRobots/about'
     twitter: https://twitter.com/wowthemesnet
     description: "ECE Student."
   sal:
