@@ -1,7 +1,7 @@
 # Site
 name: "Fast Robots"
 title: "Fast Robots"
-description: "My GitHub page where I will upload all the lab reports."
+description: "Hi! I'm Miguel, a student from Spain, and this page will have all the documentation for Fast Robots"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: /FastRobots #remember to change author's web if this changes
@@ -56,7 +56,7 @@ jekyll-archives:
     category: '/category/:name/'
     
 # Pagination 
-paginate: 6
+paginate: 13
 paginate_path: /page:num/
     
 # Other
