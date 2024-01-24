@@ -8,7 +8,7 @@ comments: false #changed
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p>My name is Miguel Álvarez Domínguez. I'm an exchange student from Spain, currently on my senior year, studying Electrical Engineering. My home university is Universidad Pontificia Comillas, in Madrid (Spain). I enjoy photography, Formula 1, as well as playin pádel (a spanish sport similar to tennis).</p>
+<p>Hey there! I'm Miguel Álvarez Domínguez, and I'm a senior studying Electrical Engineering. Originally from Universidad Pontificia Comillas in Madrid, Spain, I'm currently as a exchange student in Cornell University. When I'm not doing engineering stuff, you'll catch me enjoying photography, following Formula 1, and hustling on the pádel court (think tennis, but with a Spanish twist). Come along with me on this journey, where I'll post all the discoveries and lab reports from Fast Robots!</p>
 
 <p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
 <h4>Documentation</h4>
