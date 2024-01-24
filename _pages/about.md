@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Miguel Álvarez Domínguez
+title: About me, Miguel
 permalink: /about
 comments: false #changed
 ---
