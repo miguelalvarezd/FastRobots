@@ -13,8 +13,7 @@ title: Home
     </div>
     <div class="row">
 
-    {% assign posts = site.posts | reverse %}
-    {% for post in posts %}
+    {% for post in site.posts %}
 
         {% if post.featured == true %}
 
