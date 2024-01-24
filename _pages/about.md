@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: Miguel Álvarez Domínguez
 permalink: /about
-comments: true
+comments: false #changed
 ---
 
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p>This website is built with Jekyll and Mediumish template for Jekyll. It's for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github.</p>
+<p>My name is Miguel Álvarez Domínguez. I'm an exchange student from Spain, currently on my senior year, studying Electrical Engineering. My home university is Universidad Pontificia Comillas, in Madrid (Spain). I enjoy photography, Formula 1, as well as playin pádel (a spanish sport similar to tennis).</p>
 
 <p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
 <h4>Documentation</h4>
