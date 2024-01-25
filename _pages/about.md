@@ -15,13 +15,15 @@ comments: false #changed
 -->
 <h4>LinkedIn</h4>
 
-<p>Connect with me on LinkedIn! <a target="_blank" href="https://www.linkedin.com/in/miguel-alvarez-dominguez/" class="btn btn-primary">My LinkedIn!</a></p>
+<p>Let's connect on LinkedIn!</p>
+
+<a target="_blank" href="https://www.linkedin.com/in/miguel-alvarez-dominguez/" class="btn btn-primary">LinkedIn</a>
 
 <p></p>
 
-<h4>Want to contact me?</h4>
+<h4>Any questions?</h4>
 
-<p>You can reach me via LinkedIn or through email: <a href="mailto:ma2327@cornell.edu">ma2327@cornell.edu</a>.</p>
+<p>Feel free to reach out to me on LinkedIn or drop me an email at <a href="mailto:ma2327@cornell.edu">ma2327@cornell.edu</a>.</p>
 
 </div>
 
