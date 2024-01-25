@@ -15,13 +15,15 @@ comments: false #changed
 -->
 <h4>LinkedIn</h4>
 
-<p>Connect with me over LinkedIn! <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p>
+<p>Connect with me over LinkedIn!</p>
 
-<a target="_blank" href="https://www.linkedin.com/in/miguel-alvarez-dominguez/" class="btn btn-danger">LinkedIn</a>
+<a target="_blank" href="https://www.linkedin.com/in/miguel-alvarez-dominguez/" class="btn btn-primary">LinkedIn</a>
+
+<p></p>
 
 <h4>Want to contact me?</h4>
 
-<p>You can reach me via LinkedIn or through email: <a href="mailto:ma2327@cornell.edu">.</a>!</p>
+<p>You can reach me via LinkedIn or through email: <a href="mailto:ma2327@cornell.edu">ma2327@cornell.edu</a>.</p>
 
 </div>
 
