@@ -15,9 +15,7 @@ comments: false #changed
 -->
 <h4>LinkedIn</h4>
 
-<p>Connect with me over LinkedIn!</p>
-
-<a target="_blank" href="https://www.linkedin.com/in/miguel-alvarez-dominguez/" class="btn btn-primary">LinkedIn</a>
+<p>Connect with me on LinkedIn! <a target="_blank" href="https://www.linkedin.com/in/miguel-alvarez-dominguez/" class="btn btn-primary">My LinkedIn!</a></p>
 
 <p></p>
 
