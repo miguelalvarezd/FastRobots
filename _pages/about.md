@@ -25,6 +25,8 @@ comments: false #changed
 
 <div class="sticky-top sticky-top-80">
 <h5>Buy me a coffee</h5>
+<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/portrait.png" alt="Me, Miguel" /></p>
+
 
 <p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p>
 
