@@ -899,3 +899,7 @@ iframe {
     opacity: 0;
     transition: opacity .25s;
 }
+
+.code-wrapper {
+  overflow-x: scroll;
+}
