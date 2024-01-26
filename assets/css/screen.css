@@ -902,4 +902,5 @@ iframe {
 
 .table-wrapper {
   overflow-x: scroll;
+  width: 100%;
 }
