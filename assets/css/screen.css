@@ -899,8 +899,3 @@ iframe {
     opacity: 0;
     transition: opacity .25s;
 }
-
-.table-wrapper {
-  overflow-x: scroll;
-  width: 100%;
-}
