@@ -900,6 +900,6 @@ iframe {
     transition: opacity .25s;
 }
 
-.code-wrapper {
-  overflow-x: auto;
+.table-wrapper {
+  overflow-x: scroll;
 }
