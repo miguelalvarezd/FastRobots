@@ -38,10 +38,6 @@ pre {
     margin-bottom: -rem;
 }
 
-.row {
-    display: block;
-}
-
 .mediumnavigation {
     background: rgba(255, 255, 255, .97);
     box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .15);
