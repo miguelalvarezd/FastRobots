@@ -139,7 +139,7 @@ post_class: post-template
             {% endif %}
             {% endif %}
             {% if page.next.url %}
-            {% if page.previous.hidden != true %}
+            {% if page.next.hidden != true %}
             <a class="next d-block col-md-6 text-lg-right" href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title}} &raquo; </a>
             {% endif %}
             {% endif %}
