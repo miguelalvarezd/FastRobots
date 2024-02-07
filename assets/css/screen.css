@@ -730,10 +730,11 @@ h6 {
 }
 
 img {
-    max-width: 99%;
+    max-width: 100%;
+}
+
+.img_post{
     margin-bottom: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .bottompagination span.navigation {
