@@ -45,10 +45,6 @@ pre {
     margin-bottom: -rem;
 }
 
-code {
-    background: #00000006 !important;
-}
-
 .mediumnavigation {
     background: rgba(255, 255, 255, .97);
     box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .15);
