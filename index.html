@@ -6,9 +6,7 @@ title: Home
 {% assign specific_post = site.posts | where: 'front_page', true %}  
 
 {% if specific_post %}
-
-  {% include post.html with post=specific_post %}  
-
+  {% include post.html %}
 {% endif %}
 
 
