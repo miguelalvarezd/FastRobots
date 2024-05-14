@@ -3,11 +3,18 @@ layout: default
 title: Home
 ---
 
-{% assign specific_post = site.posts | where: 'front_page', true %}  
+{% for post in site.posts %}
 
-{% if specific_post %}
-  {% include post.html %}
-{% endif %}
+    {% assign specific_post = site.posts | where: 'front_page', true %}  
+
+    {% if specific_post %}
+
+        {% include post.html %}
+        
+    {% endif %}
+
+{% endfor %}
+
 
 
 
