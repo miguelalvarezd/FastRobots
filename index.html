@@ -3,11 +3,12 @@ layout: default
 title: Home
 ---
 
-<!-- Single Post
-================================================== -->
-<section class="article-post">
-    <div class="row">
-        {% assign post = site.posts.first %}
-        {% include post.html %}
-    </div>
-</section>
+{% assign specific_post = site.posts | where: 'front_page', true %}
+
+{% if specific_post %}
+
+  {% include post.html with post=specific_post %}
+
+{% endif %}
+
+
