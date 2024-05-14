@@ -1,0 +1,86 @@
+---
+layout: default_no_header
+disqus: false
+archive: false
+post_class: post-template
+Title: Lab 11
+---
+
+<!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row" style="display: block;">
+
+        <!-- Post -->
+        {% assign post = site.posts.first %} <!-- Get the first post from the posts collection -->
+
+        <div class="col-md-13 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                <!-- Post Title -->
+                <h1 class="posttitle">{{ post.title }}</h1>
+
+            </div>
+
+            <!-- Post Content -->
+            <div class="article-post">
+                {{ post.content }}
+            </div>
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date_to_string }}</time></span>           
+                {% if post.last_modified_at %}
+                (Updated: <time datetime="{{ post.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ post.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                {% endif %}
+                </small>
+            </p>
+
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+<!-- End Article
+================================================== -->
+
+<!-- Begin Comments
+================================================== -->
+{% if post.comments %}  <!--DELETED != false -->
+    <div class="container">
+        <div id="comments" class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                {% include disqus.html %}
+            </div>
+        </div>
+    </div>
+{% endif %}
+<!--End Comments
+================================================== -->
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+{% if post.rating %}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "Thing",
+    "name": "{{ post.title }}"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "{{ post.author.display_name }}"
+  },
+  "datePublished": "{{ post.date | date:"%Y-%m-%d" }}",
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "{{ post.rating }}",
+    "bestRating": "5"
+  }
+}
+</script>
+{% endif %}

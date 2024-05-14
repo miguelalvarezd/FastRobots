@@ -1,86 +1,62 @@
 ---
-layout: default_no_header
-disqus: false
-archive: false
-post_class: post-template
-Title: Lab 11
+layout: default
+title: Home
 ---
 
-<!-- Begin Article
+{% if page.url == "/" %}
+
+<!-- Featured
 ================================================== -->
-<div class="container">
-    <div class="row" style="display: block;">
+<section class="featured-posts">
+    <div class="section-title">
+        <h2><span>Latest Labs</span></h2>
+    </div>
+    <div class="row">
 
-        <!-- Post -->
-        {% assign post = site.posts.first %} <!-- Get the first post from the posts collection -->
+    {% for post in site.posts %}
 
-        <div class="col-md-13 flex-first flex-md-unordered">
-            <div class="mainheading">
+        {% if post.featured == true %}
 
-                <!-- Post Title -->
-                <h1 class="posttitle">{{ post.title }}</h1>
+            {% include featuredbox.html %}
 
-            </div>
+        {% endif %}
 
-            <!-- Post Content -->
-            <div class="article-post">
-                {{ post.content }}
-            </div>
-
-            <!-- Post Date -->
-            <p>
-            <small>
-                <span class="post-date"><time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date_to_string }}</time></span>           
-                {% if post.last_modified_at %}
-                (Updated: <time datetime="{{ post.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ post.last_modified_at | date: "%b %-d, %Y" }}</time>)
-                {% endif %}
-                </small>
-            </p>
-
-        </div>
-        <!-- End Post -->
+    {% endfor %}
 
     </div>
+</section>
+
+{% endif %}
+
+<!-- Posts Index
+================================================== -->
+<section class="recent-posts">
+
+    <div class="section-title">
+
+        <h2><span>All Labs</span></h2>
+
+    </div>
+
+    <div class="row listrecent">
+
+        {% assign allposts = paginator.posts | reverse %}
+        {% for post in allposts %}
+
+        {% include postbox.html %}
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+<div class="pointerup"><i class="fa fa-caret-up"></i></div>
+<span class="navigation" role="navigation">
+    {% include pagination.html %}
+</span>
 </div>
-<!-- End Article
-================================================== -->
 
-<!-- Begin Comments
-================================================== -->
-{% if post.comments %}  <!--DELETED != false -->
-    <div class="container">
-        <div id="comments" class="row justify-content-center mb-5">
-            <div class="col-md-8">
-                {% include disqus.html %}
-            </div>
-        </div>
-    </div>
-{% endif %}
-<!--End Comments
-================================================== -->
-
-<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
-https://search.google.com/structured-data/testing-tool/u/0/
-================================================== -->
-{% if post.rating %}
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org/",
-  "@type": "Review",
-  "itemReviewed": {
-    "@type": "Thing",
-    "name": "{{ post.title }}"
-  },
-  "author": {
-    "@type": "Person",
-    "name": "{{ post.author.display_name }}"
-  },
-  "datePublished": "{{ post.date | date:"%Y-%m-%d" }}",
-  "reviewRating": {
-    "@type": "Rating",
-    "ratingValue": "{{ post.rating }}",
-    "bestRating": "5"
-  }
-}
-</script>
-{% endif %}
